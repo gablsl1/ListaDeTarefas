@@ -1,3 +1,5 @@
 const app = require('./app')
 
-app.listen(3333)
+require('dotenv').config()
+
+app.listen(process.env.MYSQL_PORT)
