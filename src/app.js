@@ -1,7 +1,9 @@
 const express = require('express')
 
+const router = require('./router')
+
 const app = express()
 
-app.get('/v1/tarefas', (req, res) => res.status(200).send('Projeto'))
+app.use(router)
 
 module.exports = app
