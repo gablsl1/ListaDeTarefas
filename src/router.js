@@ -1,7 +1,9 @@
 const express = require('express')
 
+const tarefasController = require('./controllers/tarefasController')
+
 const router = express.Router()
 
-router.get('/v1/tarefas', (req, res) => res.status(200).send('O projeto está funcionando'))
+router.get('/v1/tarefas', tarefasController.getAll)
 
 module.exports = router
