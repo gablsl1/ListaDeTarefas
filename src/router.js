@@ -4,6 +4,7 @@ const tarefasController = require('./controllers/tarefasController')
 
 const router = express.Router()
 
-router.get('/v1/tarefas', tarefasController.getAll)
+router.get('/tarefas', tarefasController.getAll)
+router.post('/tarefas', tarefasController.criarTarefas)
 
 module.exports = router
